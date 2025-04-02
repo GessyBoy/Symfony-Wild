@@ -8,10 +8,12 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class DefaultController extends AbstractController
 {
-    #[Route('/default', name: 'app_default')]
+    #[Route('/', name: 'app_index')]
     public function index(): Response
     {
         return $this->render('default/index.html.twig', [
+            'author' => 'GessyBoy',
+            'repository_url' => 'https://github.com/GessyBoy/Symfony-Wild',
             'controller_name' => 'DefaultController',
         ]);
     }
