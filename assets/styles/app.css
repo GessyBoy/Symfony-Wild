@@ -4,4 +4,9 @@
 
 body {
     background-color: skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
 }
