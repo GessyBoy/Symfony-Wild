@@ -13,11 +13,13 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body>
-             <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+<body>
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
 
-        {% include 'partials/_navbar.html.twig' %}  <!-- Inclure la navbar -->
-        
+    {% include 'partials/_navbar.html.twig' %}  <!-- Inclure la navbar -->
+
+    <div id="main-content" class="transition-transform duration-300">
         {% block body %}{% endblock %}
-    </body>
+    </div>
+</body>
 </html>
